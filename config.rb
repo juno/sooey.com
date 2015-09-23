@@ -2,6 +2,16 @@
 # Compass
 ###
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
+end
+
 activate :directory_indexes
 
 # Change Compass configuration
@@ -64,7 +74,7 @@ configure :build do
   # activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_host, host: '/sooey.com'
 
   # Use relative URLs
   # activate :relative_assets
