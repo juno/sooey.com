@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@import 'bourbon/bourbon';
+@import 'base/base';  // bitters
+@import 'neat/neat';
+
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+body {
+  color: #333;
+  font-family: 'Merriweather', arial, serif;
+  margin: 1em auto;
+  width: 80%;
+}
+a, a:visited, a:link, a:active {
+  color: #c00;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+section {
+  padding: 0 0 3em 0;
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin: 1em 0 .5em;
+  }
+  p {
+    font-size: 1em;
+    margin: 0;
+  }
+  ul {
+    font-size: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.clearfix {
+    display: inline-table;
+    font-size: 1em;
+    li {
+      float: left;
+      margin: 0 1em 0 0;
+      padding: 0;
+    }
+  }
+  ul.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+body.journals {
+  background-color: #c00;
+  color: #fff;
+  a { color: #fff; }
+}
+body.projects {
+  background-color: #0c0;
+  color: #fff;
+  a { color: #fff; }
+}
+body.talks {
+  background-color: #00c;
+  color: #fff;
+  a { color: #fff; }
+  ul { font-size: 1em; }
+}
+body.publications {
+  background-color: #333;
+  color: #fff;
+  a { color: #fff; }
+  ul { font-size: 1em; }
+}
+section.pages {
+  li a {
+    color: #fff;
+    padding: .5em;
+  }
+  li a:hover { text-decoration: none; }
+  .journals a { background-color: #c00; }
+  .journals a:hover { background-color: #f00; }
+  .projects a { background-color: #0c0; }
+  .projects a:hover { background-color: #0f0; }
+  .talks a { background-color: #00c; }
+  .talks a:hover { background-color: #00f; }
+  .publications a { background-color: #333; }
+  .publications a:hover { background-color: #000; }
+}

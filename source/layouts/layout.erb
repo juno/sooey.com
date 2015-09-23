@@ -7,13 +7,14 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "sooey.com" %></title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather" type="text/css">
+    <%= stylesheet_link_tag("normalize", "all") %>
+    <%= javascript_include_tag("all") %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="page <%= page_classes %>">
     <%= yield %>
   </body>
 </html>
