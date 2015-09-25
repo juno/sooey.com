@@ -7,98 +7,154 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+$bg-color: #efefe;
+$text-color: #333;
+$link-color: #c00;
+$journals-color: #c00;
+$projects-color: #0c0;
+$talks-color: #00c;
+$publications-color: #333;
+
 body {
-  color: #333;
+  background-color: $bg-color;
+  color: $text-color;
   font-family: 'Merriweather', arial, serif;
+  line-height: 1;
   margin: 1em auto;
   width: 80%;
+  &.journals {
+    background-color: $journals-color;
+    color: #fff;
+    a { color: #fff; }
+  }
+  &.projects {
+    background-color: $projects-color;
+    color: #fff;
+    a { color: #fff; }
+  }
+  &.talks {
+    background-color: $talks-color;
+    color: #fff;
+    a { color: #fff; }
+  }
+  &.publications {
+    background-color: $publications-color;
+    color: #fff;
+    a { color: #fff; }
+  }
 }
-a, a:visited, a:link, a:active {
-  color: #c00;
-  text-decoration: none;
-}
-a:hover {
+a {
+  color: $link-color;
   text-decoration: underline;
 }
-h1 {
-  font-size: 2em;
-  font-weight: normal;
+a:visited {
+  color: shade($link-color, 50%);
 }
-h2 {
-  font-size: 1.5em;
+a:hover {
+  color: tint($link-color, 50%);
+}
+h1 {
+  font-family: 'Merriweather', arial, serif;
+  font-size: 2em;
   font-weight: normal;
 }
 section {
   padding: 0 0 3em 0;
   h1 {
+    font-family: 'Merriweather', arial, serif;
     font-size: 1.5em;
-    margin: 0;
   }
   h2 {
+    font-family: 'Merriweather', arial, serif;
     font-size: 1.2em;
-    margin: 1em 0 .5em;
   }
   p {
-    font-size: 1em;
-    margin: 0;
+    line-height: 1.7;
   }
-  ul {
-    font-size: 1em;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  ul.clearfix {
-    display: inline-table;
-    font-size: 1em;
-    li {
-      float: left;
-      margin: 0 1em 0 0;
-      padding: 0;
-    }
-  }
-  ul.clearfix:after {
+}
+ul {
+  line-height: 1.5;
+}
+
+.invisibleSectionTitle {
+  display: none;
+}
+
+/*
+ * Tagline component.
+ */
+.tagline {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+/*
+ * Inline List component
+ */
+@mixin inlineList {
+  display: inline-table;
+  font-size: 1em;
+  line-height: 1;
+  &:after {
+    clear: both;
     content: ".";
     display: block;
     height: 0;
-    clear: both;
     visibility: hidden;
   }
 }
-body.journals {
-  background-color: #c00;
-  color: #fff;
-  a { color: #fff; }
+@mixin inlineList-item {
+  float: left;
+  margin: 0 1em 0 0;
+  padding: 0;
 }
-body.projects {
-  background-color: #0c0;
-  color: #fff;
-  a { color: #fff; }
+.inlineList {
+  @include inlineList;
 }
-body.talks {
-  background-color: #00c;
-  color: #fff;
-  a { color: #fff; }
-  ul { font-size: 1em; }
+.inlineList-item {
+  @include inlineList-item;
 }
-body.publications {
-  background-color: #333;
+@mixin boxedLink {
+  padding: .5em;
+  text-decoration: none;
   color: #fff;
-  a { color: #fff; }
-  ul { font-size: 1em; }
-}
-section.pages {
-  li a {
+  &:visited {
     color: #fff;
-    padding: .5em;
   }
-  li a:hover { text-decoration: none; }
-  .journals a { background-color: #c00; }
-  .journals a:hover { background-color: #f00; }
-  .projects a { background-color: #0c0; }
-  .projects a:hover { background-color: #0f0; }
-  .talks a { background-color: #00c; }
-  .talks a:hover { background-color: #00f; }
-  .publications a { background-color: #333; }
-  .publications a:hover { background-color: #000; }
+}
+.inlineList-journalsLink {
+  background-color: $journals-color;
+  padding: .5em;
+  text-decoration: none;
+  &:hover {
+    background-color: tint($journals-color, 40%);
+  }
+}
+.inlineList-journalsLink {
+  @include boxedLink;
+  background-color: $journals-color;
+  &:hover {
+    background-color: tint($journals-color, 40%);
+  }
+}
+.inlineList-projectsLink {
+  @include boxedLink;
+  background-color: $projects-color;
+  &:hover {
+    background-color: tint($projects-color, 40%);
+  }
+}
+.inlineList-talksLink {
+  @include boxedLink;
+  background-color: $talks-color;
+  &:hover {
+    background-color: tint($talks-color, 40%);
+  }
+}
+.inlineList-publicationsLink {
+  @include boxedLink;
+  background-color: $publications-color;
+  &:hover {
+    background-color: tint($publications-color, 40%);
+  }
 }
