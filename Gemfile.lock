@@ -7,7 +7,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    autoprefixer-rails (6.2.1)
+    autoprefixer-rails (6.2.2)
       execjs
       json
     bitters (1.1.0)
