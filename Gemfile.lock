@@ -7,7 +7,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    autoprefixer-rails (6.2.2)
+    autoprefixer-rails (6.2.3)
       execjs
       json
     bitters (1.1.0)
@@ -102,7 +102,7 @@ GEM
       sass (>= 3.3)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (3.0.1)
+    net-ssh (3.0.2)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     padrino-helpers (0.12.5)
