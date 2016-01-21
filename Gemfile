@@ -10,3 +10,5 @@ gem 'bitters', '~> 1.1.0'
 gem 'bourbon', '~> 4.2.0'
 gem 'font-awesome-sass', '~> 4.4.0'
 gem 'neat', '~> 1.7.0'
+
+gem 'nokogiri', '>= 1.6.7.2'
