@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 gem 'middleman', '~> 3.4.0'
-gem 'middleman-autoprefixer', '~> 2.6.0'
+gem 'middleman-autoprefixer', '~> 2.7.0'
 gem 'middleman-deploy', '~> 1.0.0'
 
 gem 'bitters', '~> 1.2.0'
