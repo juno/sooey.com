@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.3.0'
 
-gem 'middleman', '~> 3.4.0'
+gem 'middleman', '~> 4.1.0'
 gem 'middleman-autoprefixer', '~> 2.7.0'
-gem 'middleman-deploy', '~> 1.0.0'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 gem 'bitters', '~> 1.3.1'
 gem 'bourbon', '~> 5.0.0.beta.4'
