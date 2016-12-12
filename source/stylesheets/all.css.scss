@@ -7,7 +7,7 @@
 $bg-color: #efefe;
 $text-color: #333;
 $link-color: #c00;
-$journals-color: #c00;
+$diary-color: #c00;
 $projects-color: #0c0;
 $talks-color: #00c;
 $publications-color: #333;
@@ -19,8 +19,8 @@ body {
   line-height: 1;
   margin: 1em auto;
   width: 80%;
-  &.journals {
-    background-color: $journals-color;
+  &.diary {
+    background-color: $diary-color;
     color: #fff;
     a { color: #fff; }
   }
@@ -119,19 +119,19 @@ ul {
     color: #fff;
   }
 }
-.inlineList-journalsLink {
-  background-color: $journals-color;
+.inlineList-diaryLink {
+  background-color: $diary-color;
   padding: .5em;
   text-decoration: none;
   &:hover {
-    background-color: tint($journals-color, 40%);
+    background-color: tint($diary-color, 40%);
   }
 }
-.inlineList-journalsLink {
+.inlineList-diaryLink {
   @include boxedLink;
-  background-color: $journals-color;
+  background-color: $diary-color;
   &:hover {
-    background-color: tint($journals-color, 40%);
+    background-color: tint($diary-color, 40%);
   }
 }
 .inlineList-projectsLink {
