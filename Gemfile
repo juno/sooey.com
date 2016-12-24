@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.3'
 
-gem 'middleman', '~> 4.1.14'
+gem 'middleman', '~> 4.2.0'
 gem 'middleman-autoprefixer', '~> 2.7.1'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
