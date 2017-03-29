@@ -10,7 +10,7 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     autoprefixer-rails (6.7.7.1)
       execjs
-    backports (3.6.8)
+    backports (3.7.0)
     bitters (1.5.0)
       bourbon (~> 5.0.0.beta.7)
       sass (~> 3.4)
@@ -113,7 +113,7 @@ GEM
     tilt (2.0.7)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    uglifier (3.1.10)
+    uglifier (3.1.11)
       execjs (>= 0.3.0, < 3)
 
 PLATFORMS
