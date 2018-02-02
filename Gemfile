@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.3'
+ruby '2.4.2'
 
 gem 'middleman', '~> 4.2.0'
 gem 'middleman-autoprefixer', '~> 2.7.1'
