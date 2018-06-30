@@ -8,6 +8,6 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 gem 'bitters', '~> 1.8.0'
 gem 'bourbon', '~> 5.0.1'
-gem 'neat', '~> 2.1.0'
+gem 'neat', '~> 3.0.0'
 
 gem 'nokogiri', '>= 1.6.8.1'
