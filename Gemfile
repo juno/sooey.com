@@ -6,7 +6,7 @@ gem 'middleman', '~> 4.3.5'
 gem 'middleman-autoprefixer', '~> 2.10.1'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
-gem 'bitters', '~> 2.0.0'
+gem 'bitters', '~> 2.0.1'
 gem 'bourbon', '~> 5.1.0'
 gem 'neat', '~> 4.0.0'
 
