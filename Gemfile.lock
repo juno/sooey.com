@@ -79,14 +79,14 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.3)
     minitest (5.14.2)
     neat (4.0.0)
       thor (~> 0.19)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
-    nokogiri (1.11.6)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     padrino-helpers (0.13.3.4)
