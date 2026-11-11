@@ -2,9 +2,6 @@
 # Compass
 ###
 
-activate :autoprefixer do |config|
-  config.browsers = ['last 2 versions', 'Explorer >= 9']
-end
 
 activate :directory_indexes
 
